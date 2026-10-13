@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Joseph Kibande | Computer Science Student</title>
+  <meta name="description" content="Portfolio of Joseph Kibande, BSc Computer Science student at Uganda Christian University.">
+  <style>
+    :root {
+      --navy: #12294a;
+      --blue: #1d5fd1;
+      --sky: #e8f0fc;
+      --ink: #1b2a41;
+      --muted: #55657d;
+      --line: #d5dfee;
+      --white: #ffffff;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Arial, sans-serif;
+      color: var(--ink);
+      background: var(--white);
+      line-height: 1.65;
+    }
+    a { color: var(--blue); }
+    a:focus-visible { outline: 3px solid var(--blue); outline-offset: 3px; }
+
+    header {
+      background: var(--navy);
+      color: var(--white);
+      padding: 64px 20px 56px;
+    }
+    .wrap { max-width: 760px; margin: 0 auto; }
+    header h1 { margin: 0 0 8px; font-size: 2.6rem; line-height: 1.15; font-family: Georgia, "Times New Roman", serif; font-weight: 700; }
+    header p { margin: 0; font-size: 1.15rem; color: #c9d8f0; }
+
+    nav { background: var(--sky); border-bottom: 1px solid var(--line); }
+    nav .wrap { display: flex; flex-wrap: wrap; gap: 8px 24px; padding: 12px 20px; }
+    nav a { text-decoration: none; font-weight: 600; color: var(--navy); }
+    nav a:hover { color: var(--blue); text-decoration: underline; }
+
+    main .wrap { padding: 0 20px; }
+    section { padding: 40px 0 8px; }
+    h2 { margin: 0 0 14px; font-size: 1.5rem; color: var(--navy); font-family: Georgia, "Times New Roman", serif; }
+    p { margin: 0 0 14px; max-width: 65ch; }
+
+    .skills { display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; }
+    .box { border: 1px solid var(--line); border-left: 5px solid var(--blue); border-radius: 6px; padding: 16px 18px; }
+    .box h3 { margin: 0 0 8px; font-size: 1.05rem; color: var(--navy); }
+    .box ul { margin: 0; padding: 0; list-style: none; }
+    .box li { display: flex; justify-content: space-between; gap: 12px; padding: 4px 0; border-bottom: 1px solid var(--line); }
+    .box li:last-child { border-bottom: 0; }
+    .level { color: var(--muted); font-size: 0.95rem; }
+
+    .learning { background: var(--sky); border-radius: 6px; padding: 20px 22px; }
+    .learning h3 { margin: 0 0 8px; color: var(--navy); }
+    .learning p:last-child { margin-bottom: 0; }
+
+    .empty { border: 1px dashed var(--muted); border-radius: 6px; padding: 18px 20px; color: var(--muted); }
+
+    footer { margin-top: 48px; background: var(--navy); color: #c9d8f0; padding: 28px 20px; }
+    footer a { color: var(--white); }
+
+    @media (max-width: 520px) {
+      header h1 { font-size: 2rem; }
+      header { padding: 44px 20px 40px; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="wrap">
+      <h1>Joseph Kibande</h1>
+      <p>Year 1, BSc Computer Science, Uganda Christian University</p>
+    </div>
+  </header>
+
+  <nav aria-label="Page sections">
+    <div class="wrap">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#learning">Currently learning</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact">Contact</a>
+    </div>
+  </nav>
+
+  <main>
+    <div class="wrap">
+
+      <section id="about">
+        <h2>About me</h2>
+        <p>I study Computer Science because it powers most of the technology that is changing the world today. I enjoy systems that make life easier and more efficient, and I want to help build them.</p>
+        <p>I am still exploring which area of computing to focus on, and I am learning something new in every course.</p>
+      </section>
+
+      <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills">
+          <div class="box">
+            <h3>Languages</h3>
+            <ul>
+              <li><span>C</span> <span class="level">Beginner</span></li>
+              <li><span>Python</span> <span class="level">Beginner</span></li>
+              <li><span>HTML</span> <span class="level">Beginner</span></li>
+            </ul>
+          </div>
+          <div class="box">
+            <h3>Tools</h3>
+            <ul>
+              <li><span>VS Code</span> <span class="level">In use</span></li>
+              <li><span>CodeBlocks</span> <span class="level">In use</span></li>
+              <li><span>GitHub</span> <span class="level">Beginner</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section id="learning">
+        <h2>Currently learning</h2>
+        <div class="learning">
+          <h3>Data enumeration of medical data</h3>
+          <p>I am learning how to list, count and organise medical records with code, so that information is easy to find and check.</p>
+          <p>This is a skill I am still building. I will add what I make here as I go.</p>
+        </div>
+      </section>
+
+      <section id="projects">
+        <h2>Projects</h2>
+        <div class="empty">
+          <p>My first project is in progress. Check back soon, or follow my work on <a href="https://github.com/yourusername">GitHub</a>.</p>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <footer id="contact">
+    <div class="wrap">
+      <h2 style="color:#ffffff;">Contact</h2>
+      <p>You can find my code and updates on <a href="https://github.com/yourusername">GitHub</a>.</p>
+    </div>
+  </footer>
+
+</body>
+</html>
